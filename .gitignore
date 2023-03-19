@@ -1,21 +1,13 @@
 # dependencies
+
+#Typetest
 typetext/node_modules
 typetext/.pnp
 typetext/.pnp.js
+typetext/.DS_Store
 
-# testing
-/coverage
-
-# production
-typetext/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+#Calculator1x
+Calculator1x/node_modules
+Calculator1x/.pnp
+Calculator1x/.pnp.js
+Calculator1x/.DS_Store
