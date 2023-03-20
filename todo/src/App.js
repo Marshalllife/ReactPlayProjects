@@ -3,9 +3,7 @@
 // import './App.css';
 import { useReducer, useState } from 'react';
 import Todo from './Todo';
-
-
-
+import './App.css'
 
 
 export const ACTIONS = {
@@ -24,7 +22,7 @@ function reducer(todos, action) {
         if (todo.id === action.payload.id) {
           return { ...todo, complete: !todo.complete }
         }
-        return todo
+        return todo;
       })
     case ACTIONS.DELETE_TODO:
       return todos.filter(todo => todo.id !== action.payload.id)
@@ -57,13 +55,14 @@ export default function App() {
 
 
   return (
-    <div>
+    <div className='todo-flex'>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={name} onChange={e => setName(e.target.value)} />
+        <input type="text" value={name} placeholder="enter what to do" maxLength={40} onChange={e => setName(e.target.value)} />
+
+        {todos.map(todo => {
+          return <Todo key={todo.id} todo={todo} dispatch={dispatch} />
+        })}
       </form>
-      {todos.map(todo => {
-        return <Todo key={todo.id} todo={todo} dispatch={dispatch} />
-      })}
     </div>
   );
 
