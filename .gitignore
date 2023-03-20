@@ -6,8 +6,14 @@ typetext/.pnp
 typetext/.pnp.js
 typetext/.DS_Store
 
-#Calculator1x
-Calculator1x/node_modules
-Calculator1x/.pnp
-Calculator1x/.pnp.js
-Calculator1x/.DS_Store
+#Calculat
+calculator1x/node_modules
+calculator1x/.pnp
+calculator1x/.pnp.js
+calculator1x/.DS_Store
+
+#counter
+counter/node_modules
+counter/.pnp
+counter/.pnp.js
+counter/.DS_Store
