@@ -56,13 +56,14 @@ export default function App() {
 
   return (
     <div className='todo-flex'>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={name} placeholder="enter what to do" maxLength={40} onChange={e => setName(e.target.value)} />
-
+      <div className='form'>
+        <form onSubmit={handleSubmit}>
+          <input type="text" value={name} placeholder="enter what to do" maxLength={40} onChange={e => setName(e.target.value)} />
+        </form>
         {todos.map(todo => {
           return <Todo key={todo.id} todo={todo} dispatch={dispatch} />
         })}
-      </form>
+      </div>
     </div>
   );
 

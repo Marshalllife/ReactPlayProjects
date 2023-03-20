@@ -5,21 +5,23 @@
   justify-content: center;
 }
 
-.todo-flex > form {
+.todo-flex > .form {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(69, 205, 20, 0.298);
   width: 35rem;
 }
+.todo-flex > .form form {
+  align-self: center;
+}
 
-.todo-flex > form > input {
+.todo-flex > .form form input {
   margin-top: 3rem;
   margin-bottom: 1rem;
   outline: none;
   padding: 0.5rem;
   border-radius: 0.4rem;
-  align-self: center;
   width: 15rem;
 }
 
