@@ -17,3 +17,10 @@ counter/node_modules
 counter/.pnp
 counter/.pnp.js
 counter/.DS_Store
+
+
+#Tod0
+todo/node_modules
+todo/.pnp
+todo/.pnp.js
+todo/.DS_Store
